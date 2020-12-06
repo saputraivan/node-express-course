@@ -1,8 +1,5 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
-
-app.use(bodyParser.json())
 
 const mockUserData=[
 	{name:'Mark'},
@@ -51,4 +48,12 @@ app.post('/login',function(req,res){
 
 })
 
-app.listen(8000,function(){console.log('server is listening')})
+const port = process.env.PORT || 8080
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})

@@ -1,0 +1,9 @@
+{
+    "appService.showBuildDuringDeployPrompt": true,
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/780a158c-6a8d-42d0-84a5-f386c2d65f76/resourceGroups/IvanRG/providers/Microsoft.Web/sites/IvanNodeJS",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
